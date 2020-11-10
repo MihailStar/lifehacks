@@ -1,0 +1,9 @@
+mixin button({ className, icon, href, text })
+  a(
+    class=className
+    class=icon ? `button button_${icon.name}` : 'button'
+    href=href
+  )
+    if icon
+      +icon(icon.name, icon.width, icon.height)
+    span= text

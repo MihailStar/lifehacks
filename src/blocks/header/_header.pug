@@ -1,0 +1,25 @@
+header.header
+  .grid
+    .grid__row
+      .grid__column.grid__column_md-7
+        h1.header__title 173 Best Lifehacks of&nbsp;2019
+        p.header__description Tips, Tricks and Techniques to Save Money, Increase&nbsp;Productivity, and be Healthier
+        picture
+          source(type='image/webp' srcset='./images/content/book.webp')
+          source(type='image/png' srcset='./images/content/book.png')
+          img.header__image(
+            src='./images/content/book.png'
+            alt='E-book 173 Best Lifehacks of 2019'
+          )
+        +button({
+          className: 'header__button',
+          href: 'javascript:void(0);',
+          text: 'Download Now E-book',
+          icon: {
+            name: 'download',
+            width: '26',
+            height: '26'
+          }
+        })
+        small.header__small * Some corresponding text explanation can&nbsp;go&nbsp;here
+      .grid__column.grid__column_md-5

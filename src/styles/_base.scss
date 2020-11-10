@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  $font-size: 16px;
+  margin: 0;
+  background-color: #fff;
+  color: #2247ad;
+  font: 400 #{$font-size}/#{24px / $font-size} 'Poppins', sans-serif;
+
+  @media (min-width: 992px) {
+    line-height: (30px / $font-size);
+  }
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

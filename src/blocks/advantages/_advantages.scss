@@ -1,0 +1,54 @@
+.advantages {
+  margin-bottom: 2.8rem;
+
+  @media (min-width: 992px) {
+    margin-bottom: 3.6rem;
+  }
+
+  &__title {
+    @include visually-hidden;
+  }
+
+  &__item {
+    margin-bottom: 3rem;
+    padding: 3rem 2rem 3.8rem;
+    border-radius: 18px;
+    background-color: #fff;
+    box-shadow: 0 0 23.5px 1.5px rgba(#e3e6e9, 1);
+
+    .icon-diamond {
+      $font-size: 18px;
+      display: block;
+      margin: 0 auto 2rem;
+      width: (68px / $font-size * 1em);
+      height: (64px / $font-size * 1em);
+      font-size: $font-size - 1;
+      fill: #3265d0;
+
+      @media (min-width: 1200px) {
+        font-size: $font-size;
+      }
+    }
+  }
+
+  &__subtitle {
+    $font-size: 18px;
+    margin-top: 0;
+    margin-bottom: (4px / $font-size * 1em);
+    color: #18327a;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $font-size;
+    line-height: (32px / $font-size);
+  }
+
+  &__description {
+    $font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: $font-size;
+    line-height: (24px / $font-size);
+  }
+}

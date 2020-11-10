@@ -1,0 +1,111 @@
+.description {
+  margin-bottom: 7.2rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 14.4rem;
+  }
+
+  &__title {
+    $font-size: 36px;
+    margin-top: 0;
+    margin-bottom: (16px / $font-size * 1em);
+    color: #18327a;
+    font-weight: 600;
+    font-size: $font-size - 6;
+    line-height: (58px / $font-size);
+
+    @media (min-width: 992px) {
+      font-size: $font-size;
+    }
+  }
+
+  &__text {
+    $font-size: 16px;
+    margin-top: 0;
+    margin-bottom: (24px / $font-size * 1em);
+
+    &:last-of-type {
+      margin-bottom: (32px / $font-size * 1em);
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: (30px / $font-size * 1em);
+
+      &:last-of-type {
+        margin-bottom: (46px / $font-size * 1em);
+      }
+    }
+  }
+
+  &__button {
+    $font-size: 18px;
+    display: flex;
+    margin: 0 auto (40px / $font-size * 1em);
+    width: 256px;
+
+    @media (min-width: 450px) {
+      display: inline-flex;
+      margin: 0 0 (40px / $font-size * 1em);
+      width: auto;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.4em 0 0 5.6rem;
+
+    @media (min-width: 768px) {
+      padding-top: 2rem;
+    }
+  }
+
+  &__item {
+    $font-size: 18px;
+    $line-height: 28px;
+    position: relative;
+    display: block;
+    min-height: ($line-height * 1.5 / $font-size * 1em);
+    color: #3446b8;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: ($line-height / $font-size);
+
+    &:not(:last-of-type) {
+      margin-bottom: (18px / $font-size * 1em);
+    }
+
+    @media (min-width: 992px) {
+      font-size: 17px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: $font-size;
+    }
+
+    &::before {
+      position: absolute;
+      top: (-6px / $font-size * 1em);
+      left: (-56px / $font-size * 1em);
+      display: block;
+      width: (40px / $font-size * 1em);
+      height: (40px / $font-size * 1em);
+      border-radius: 50%;
+      background: linear-gradient(to bottom, #74d04e, #5abe31), #74d04e;
+      content: '';
+    }
+
+    .icon-check {
+      position: absolute;
+      top: (7px / $font-size * 1em);
+      left: (-46px / $font-size * 1em);
+      width: (20px / $font-size * 1em);
+      height: (15px / $font-size * 1em);
+      fill: #fff;
+    }
+  }
+}

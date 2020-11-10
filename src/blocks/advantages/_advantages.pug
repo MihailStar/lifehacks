@@ -1,0 +1,35 @@
+-
+  var items = [
+    {
+      title: 'Title 1 Goes here',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
+    },
+    {
+      title: 'Title 2 Goes here',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
+    },
+    {
+      title: 'Title 3 Goes here',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
+    },
+    {
+      title: 'Title 4 Goes here',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
+    }
+  ]
+
+mixin item({ title, description })
+  .grid__column.grid__column_sm-6.grid__column_lg-3
+    .advantages__item
+      +icon('diamond', '68', '64')
+      h3.advantages__subtitle= title
+      p.advantages__description= description
+
+section.advantages
+  .grid
+    .grid__row
+      .grid__column
+        h2.advantages__title Advantages
+    .grid__row
+      each item in items
+        +item(item)

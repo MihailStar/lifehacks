@@ -1,0 +1,14 @@
+.footer {
+  padding: 3.4rem 0;
+  background-color: #3446b8;
+  color: #fff;
+
+  &__copyright {
+    $font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: $font-size;
+    line-height: (32px / $font-size);
+  }
+}
